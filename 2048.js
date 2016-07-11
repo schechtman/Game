@@ -235,7 +235,7 @@ function modify_grid(grid,direction){
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[j][i])
-					if (row[i][j]!=grid[4*i+j])
+					if (row[j][i]!=grid[4*i+j])
 						{change=true;}
 				}
 			}
@@ -286,7 +286,7 @@ function modify_grid(grid,direction){
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[j][i])
-				if (row[i][j]!=grid[4*i+j])
+				if (row[j][i]!=grid[4*i+j])
 						{change=true;}
 				}
 			}
