@@ -14,6 +14,7 @@
 
 <canvas id="grille" width="400" height="400"></canvas>
 <script>
+//initialisation
 var canvas = document.getElementById("grille");
 var ctx = canvas.getContext("2d");
 var game=[]
@@ -52,6 +53,76 @@ for (var i=0;i<4;i++){
 
 }
 		}
+function draw_grille(){
+for (var i=0;i<4;i++){
+		for (var j=0;j<4;j++){
+			drawPaddle(i*100,j*100,grille[4*i+j]);
+		}
+}
+}
+//change game grid (the array)
+function modify_grid(grid,direction){
+	var row=[[],[],[],[]]
+	var grid_r=[]
+	if (direction==37||direction==39){
+		for(var i=0;i++;i<4){
+			for(var j=0;j++;j<4){
+			row[i].push(grid[4*i+j+1])
+		}
+		if (direction==37){
+			for (var i=0;i++;i<4){
+				var row1=row[i];
+				for (var j=0;j++;j<3){
+					if (row1[j]=0){
+						for (var n=j;n++;n<3){
+							row1[n]=row1[n+1]
+						}
+						
+					}
+					else if (row1[j]==row1[j+1]){
+						row1[j]=2*row[j]
+						for (var n=j+1;n++;n<3){
+							row1[n]=row1[n+1]
+						}
+							
+						}
+						row1[3]=0
+					}
+				row[i]=row1		
+				}
+			for (var i=0;i++;i<4){
+				for (var j=0;j++;j<4){
+					grid_r.push(row[i][j])
+				}
+			}
+			}
+		}
+		
+	}
+	return grid_r
+}
+	else if (direction==38||direction==40){
+		for(var i=0;i++;i<4){
+			for(var j=0;j++;j<4){
+			row[j].push(grid[4*i+j+1])
+			}
+		
+		}
+		
+	}
+		
+	}
+//keypad listener
+    var rightPressed = false;
+    var leftPressed = false;
+    var upPressed=false;
+    var downPressed=false;
+    document.addEventListener("onkeydown",move,false);
+    function move(e){
+    	grille=modify_grid(grille,e);
+    	draw_grille();
+    }
+
 		
 
 </script>
