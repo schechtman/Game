@@ -116,7 +116,7 @@ function modify_grid(grid,direction){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[i][j]);
 					if (row[i][j]!=grid[4*i+j])
-						{change=false;}
+						{change=true;}
 				}
 			}
 
@@ -308,7 +308,7 @@ function modify_grid(grid,direction){
 		
 	}*/
 //keypad listener
-		var check=true
+		var check=true;
 		var game2;
 	    function move(e){
     	var reponse=modify_grid(game,e.keyCode);
