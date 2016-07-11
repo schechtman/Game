@@ -1,0 +1,41 @@
+<!Doctype html>
+
+<html>
+<head>
+
+   <meta charset="utf-8"/>
+   <title> First game </title>
+   <style>
+      *{padding: O; margin : 0;}
+       canvas {background: #fff; display: block; margin : 0 auto;}
+    </style>
+</head>
+<body>
+
+<canvas id="grille" width="400" height="400"></canvas>
+<script>
+var canvas = document.getElementById("grille");
+var ctx = canvas.getContext("2d");
+
+function drawPaddle(x,y){
+   ctx.beginPath();
+   ctx.rect(x,y,100,100);
+ctx.fillStyle="#776e65";
+   ctx.lineWidth="1";
+   ctx.strokeStyle="blue";
+
+
+   ctx.stroke();
+   ctx.closePath();
+	ctx.font = "30px Arial";
+	ctx.fillText("0",x+40,y+60);
+}
+for (var i=0;i<4;i++){
+		for (var j=0;j<4;j++){
+				drawPaddle(i*100,j*100);
+				console.log(i,j);
+}
+		}
+</script>
+</body>
+</html>
