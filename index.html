@@ -21,7 +21,7 @@ for(var i=0;i<16;i++)
 	game.push(0);
 console.log(game)
 
-function drawPaddle(x,y){
+function drawPaddle(x,y,text){
    ctx.beginPath();
    ctx.rect(x,y,100,100);
 
@@ -32,12 +32,23 @@ function drawPaddle(x,y){
    ctx.stroke();
    ctx.closePath();
 	ctx.font = "30px Arial";
-	ctx.fillText("0",x+40,y+60);
+	ctx.fillText(text,x+40,y+60);
 }
+var ini1=Math.floor((Math.random() * 16) + 1); 
+var ini2=Math.floor((Math.random() * 16) + 1); 
+console.log(ini1,ini2);
 for (var i=0;i<4;i++){
 		for (var j=0;j<4;j++){
-				drawPaddle(i*100,j*100);
-				console.log(i,j);
+				if (4*i+j+1===ini1||4*i+j+1===ini2){
+					var chance=Math.floor((Math.random()*2)+1);
+					if (chance===1)
+						drawPaddle(i*100,j*100,2);
+					else
+						drawPaddle(i*100,j*100,4);
+				}
+				else
+				 	drawPaddle(i*100,j*100);
+
 }
 		}
 		
