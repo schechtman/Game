@@ -31,8 +31,9 @@ function drawPaddle(x,y,text){
 
    ctx.stroke();
    ctx.closePath();
-	ctx.font = "30px Arial";
-	ctx.fillText(text,x+40,y+60);
+   if (text!=undefined)
+	{ctx.font = "30px Arial";
+	ctx.fillText(text,x+40,y+60);}
 }
 var ini1=Math.floor((Math.random() * 16) + 1); 
 var ini2=Math.floor((Math.random() * 16) + 1); 
