@@ -308,7 +308,7 @@ function modify_grid(grid,direction){
 		
 	}*/
 //keypad listener
-		var check=true;
+		var check;
 		var game2;
 	    function move(e){
     	var reponse=modify_grid(game,e.keyCode);
@@ -333,5 +333,21 @@ function modify_grid(grid,direction){
 		else
 		game[random_index%game.length]=random;
     	draw_grille();
-    }}
+    }
+    else{ var fin=true;
+    	  var i=0;
+    	  
+    	while (fin&&i<16){
+    		if (game[i]==0){
+    			fin=false;
+    		}
+    		else
+    		    i++;
+    	}
+    	if (fin){
+    		alert("Game Over");
+    		restart();
+    	}
+    	}
+	    }
     document.addEventListener("keydown",move,false);
