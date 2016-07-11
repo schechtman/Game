@@ -16,6 +16,10 @@
 <script>
 var canvas = document.getElementById("grille");
 var ctx = canvas.getContext("2d");
+var game=[]
+for(var i=0;i<16;i++)
+	game.push(0);
+console.log(game)
 
 function drawPaddle(x,y){
    ctx.beginPath();
