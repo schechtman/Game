@@ -49,10 +49,11 @@ restart();
 
 //change game grid (the array)
 function modify_grid(grid,direction){
+	var change=false;
 	var row=[[],[],[],[]];
 	var grid_r=[];
 	if (!(direction===37||direction==38||direction==39||direction===40)){
-		return [grid,false];}
+		return [grid,change];}
 	else if (direction==37||direction==39){
 		for (var i=0;i<4;i++){
 			for (var j=0;j<4;j++){
@@ -113,7 +114,9 @@ function modify_grid(grid,direction){
 			}
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
-					grid_r.push(row[i][j])
+					grid_r.push(row[i][j]);
+					if (row[i][j]!=grid[4*i+j])
+						{change=false;}
 				}
 			}
 
@@ -164,6 +167,8 @@ function modify_grid(grid,direction){
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[i][j])
+					if (row[i][j]!=grid[4*i+j])
+						{change=true;}
 				}
 			}
 
@@ -230,6 +235,8 @@ function modify_grid(grid,direction){
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[j][i])
+					if (row[i][j]!=grid[4*i+j])
+						{change=true;}
 				}
 			}
 
@@ -279,13 +286,15 @@ function modify_grid(grid,direction){
 			for (var i=0;i<4;i++){
 				for (var j=0;j<4;j++){
 					grid_r.push(row[j][i])
+				if (row[i][j]!=grid[4*i+j])
+						{change=true;}
 				}
 			}
 
 			}
 	}
 
-	return [grid_r,true]
+	return [grid_r,change]
 }
 /*	else if (direction==38||direction==40){
 		for(var i=0;i++;i<4){
@@ -300,15 +309,16 @@ function modify_grid(grid,direction){
 	}*/
 //keypad listener
 		var check=true
+		var game2;
 	    function move(e){
     	var reponse=modify_grid(game,e.keyCode);
-		game=reponse[0];
+		game2=reponse[0];
 		check=reponse[1];
 
 
 
 		if (check){
-		
+		game=game2;
 		var random =2*Math.floor((Math.random()*2)+1);
 		var random_index=Math.floor((Math.random()*16));
 		var i=0;
@@ -322,7 +332,6 @@ function modify_grid(grid,direction){
 			restart();}
 		else
 		game[random_index%game.length]=random;
-
     	draw_grille();
     }}
     document.addEventListener("keydown",move,false);
