@@ -319,7 +319,12 @@ function modify_grid(grid,direction){
 
 		if (check){
 		game=game2;
-		var random =2*Math.floor((Math.random()*2)+1);
+		
+		var random =Math.floor((Math.random()*10)+1);
+		if (random==10)
+			random=4;
+		else
+			random=2;
 		var random_index=Math.floor((Math.random()*16));
 		var i=0;
 	
