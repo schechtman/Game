@@ -1,8 +1,27 @@
 //initialisation
 var canvas = document.getElementById("grille");
 var ctx = canvas.getContext("2d");
+var game =[];
+for (var i=0;i<16;i++){
+		game.push(0)
+	}
+function random(){
+	var zeros=[];
+	for (var i=0;i<16;i++){
+		if (game[i]==0)
+			zeros.push(i)
+	}
+	var n=zeros.length;
 
-
+	var index=Math.floor((Math.random()*n));
+	var two_or_four=Math.floor((Math.random*10)+1);
+	if (Math.floor((Math.random*10)+1)==10)
+		game[index]=4;
+	else
+		game[index]=2;
+	
+	
+}
 function drawPaddle(x,y,text){
    ctx.beginPath();
    ctx.rect(x,y,100,100);
@@ -14,10 +33,7 @@ function drawPaddle(x,y,text){
 	{ctx.font = "30px Arial";
 	ctx.fillText(text,x+40,y+60);}
 }
-var game =[];
-for (var i=0;i<16;i++){
-		game.push(0)
-	}
+
 function draw_grille(){
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 for (var i=0;i<4;i++){
@@ -320,23 +336,7 @@ function modify_grid(grid,direction){
 		if (check){
 		game=game2;
 		
-		var random =Math.floor((Math.random()*10)+1);
-		if (random==10)
-			random=4;
-		else
-			random=2;
-		var random_index=Math.floor((Math.random()*16));
-		var i=0;
-	
-		while (game[random_index%game.length]!=0 && i<16){
-				i++;
-				random_index++;}
-		if (i===16){
-
-			alert("Game Over");
-			restart();}
-		else
-		game[random_index%game.length]=random;
+		random();
     	draw_grille();
     }
     else{ var fin=true;
