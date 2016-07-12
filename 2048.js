@@ -16,9 +16,9 @@ function random(){
 	var index=Math.floor((Math.random()*n));
 	var two_or_four=Math.floor((Math.random*10)+1);
 	if (Math.floor((Math.random*10)+1)==10)
-		game[index]=4;
+		game[zeros[index]]=4;
 	else
-		game[index]=2;
+		game[zeros[index]]=2;
 	
 	
 }
@@ -101,6 +101,8 @@ function modify_grid(grid,direction){
 							first=true;}
 							else if (begin==row1[j]){
 								row_inter.push(2*begin);
+								
+								
 								first=false;
 
 								}
