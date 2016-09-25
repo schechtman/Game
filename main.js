@@ -60,7 +60,7 @@ restart();
 
 
 		if (check){
-		console.log('par exemple');
+		
 		game=game2;
 		
 		random();
@@ -68,7 +68,7 @@ restart();
     }
     else{ var fin=true;
     	  var i=0;
-    	  console.log('et non');
+    	  
     	while (fin&&i<16){
     		if (game[i]==0){
     			fin=false;
