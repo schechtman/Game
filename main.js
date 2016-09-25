@@ -54,7 +54,6 @@ restart();
 		var check;
 		var game2;
 	    function move(e){
-		console.log('fdhqjkhqj');
     	var reponse=modify_grid(game,e.keyCode);
 		game2=reponse[0];
 		check=reponse[1];
