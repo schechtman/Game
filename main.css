@@ -46,8 +46,6 @@ html, body {
 
 
 .tile00{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -57,8 +55,6 @@ html, body {
   border-radius: 3px;}
 
 .tile01{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -68,8 +64,6 @@ html, body {
   border-radius: 3px;}
 
 .tile02{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -78,8 +72,6 @@ html, body {
   float: left;
   border-radius: 3px;}
 .tile03{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -89,8 +81,7 @@ html, body {
   border-radius: 3px;}
 
 .tile10{
-  font-size:200%;
-  line-height:120px;
+
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -100,8 +91,7 @@ html, body {
   border-radius: 3px;}
 
 .tile11{
-  font-size:200%;
-  line-height:120px;
+
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -111,8 +101,6 @@ html, body {
   border-radius: 3px;}
 
 .tile12{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -121,8 +109,6 @@ html, body {
   float: left;
   border-radius: 3px;}
 .tile13{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -133,8 +119,6 @@ html, body {
 
 
 .tile20{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -144,8 +128,6 @@ html, body {
   border-radius: 3px;}
 
 .tile21{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -155,8 +137,6 @@ html, body {
   border-radius: 3px;}
 
 .tile22{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -165,8 +145,6 @@ html, body {
   float: left;
   border-radius: 3px;}
 .tile23{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -176,8 +154,6 @@ html, body {
   border-radius: 3px;}
 
 .tile30{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -187,8 +163,6 @@ html, body {
   border-radius: 3px;}
 
 .tile31{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -198,8 +172,6 @@ html, body {
   border-radius: 3px;}
 
 .tile32{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
@@ -208,8 +180,6 @@ html, body {
   float: left;
   border-radius: 3px;}
 .tile33{
-  font-size:200%;
-  line-height:120px;
   vertical-align:middle;
   text-align: center;
   width: 120px;
