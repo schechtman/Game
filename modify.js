@@ -1,5 +1,5 @@
 function modify_grid(grid,direction){
-	console.log('ouidfjk');
+	
 	var change=false;
 	var row=[[],[],[],[]];
 	var grid_r=[];
