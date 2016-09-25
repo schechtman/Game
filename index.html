@@ -1,25 +1,41 @@
-
-<!Doctype html>
-
+<!DOCTYPE html>
 <html>
 <head>
 
-   <meta charset="utf-8"/>
-   <title> 2048 </title>
-   <style>
-      *{padding: O; margin : 0;}
-       canvas {background: #fff; display: block; margin : 0 auto;}
-    </style>
+<link href="main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-
-<canvas id="grille" width="400" height="400"></canvas>
-<script src="2048.js">
-
-
-
-
+<div class="game-container">
+        <div class="grid-row">
+          <div class="grid-cell"><div id="tile00"> </div></div>
+          <div class="grid-cell"><div id="tile01"> </div></div>
+          <div class="grid-cell"><div id="tile02"> </div></div>
+          <div class="grid-cell"><div id="tile03"> </div></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"><div id="tile10"> </div></div>
+          <div class="grid-cell"><div id="tile11"> </div></div>
+          <div class="grid-cell"><div id="tile12"> </div></div>
+          <div class="grid-cell"><div id="tile13"> </div></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"><div id="tile20"> </div></div>
+          <div class="grid-cell"><div id="tile21"> </div></div>
+          <div class="grid-cell"><div id="tile22"> </div></div>
+          <div class="grid-cell"><div id="tile23"> </div></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"><div id="tile30"> </div></div>
+          <div class="grid-cell"><div id="tile31"> </div></div>
+          <div class="grid-cell"><div id="tile32"> </div></div>
+          <div class="grid-cell"><div id="tile33"> </div></div>
+        </div>
+      </div>
+<script src="main.js">
 		
 </script>
+<script src="modify.js"></script>
 </body>
+
 </html>

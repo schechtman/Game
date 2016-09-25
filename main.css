@@ -1,0 +1,211 @@
+.game-container {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: auto;
+  position: relative;
+  
+  padding: 15px;
+  cursor: default;
+
+  background: #bbada0;
+  border-radius: 6px;
+  width: 510px;
+  height: 510px;
+ }
+.grid-row {
+  margin-bottom: 10px; }
+  .grid-row:last-child {
+    margin-bottom: 0; }
+  .grid-row:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.grid-cell {
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;
+  background: rgba(238, 228, 218, 0.35); }
+  .grid-cell:last-child {
+    margin-right: 0; }
+
+
+.tile00{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile01{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile02{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+.tile03{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile10{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile11{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile12{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+.tile13{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+
+.tile20{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile21{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile22{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+.tile23{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile30{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile31{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
+.tile32{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+.tile33{
+  font-size:200%;
+  line-height:120px;
+  vertical-align:middle;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;}
+
