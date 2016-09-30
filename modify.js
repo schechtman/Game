@@ -1,10 +1,9 @@
 function modify_grid(grid,direction){
-	
 	var change=false;
 	var row=[[],[],[],[]];
 	var grid_r=[];
 	if (!(direction===37||direction==38||direction==39||direction===40)){
-		return [grid,change];}
+		return [grid.slice(),change];}
 	else if (direction==37||direction==39){
 		for (var i=0;i<4;i++){
 			for (var j=0;j<4;j++){
